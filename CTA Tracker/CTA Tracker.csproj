@@ -24,7 +24,7 @@
 		<ApplicationTitle>CTA Tracker</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.cta_tracker</ApplicationId>
+		<ApplicationId>us.danleonard.ctatracker</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
