@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CTA_Tracker.MainPage">
+             xmlns:custom_components="clr-namespace:CTA_Tracker"
+             x:Class="CTA_Tracker.MainPage"
+             BackgroundColor="#565a5c">
 
-    <VerticalStackLayout x:Name="verticalStack"
-        Padding="30,0"
-        Spacing="25" />
-
+    <Grid x:Name="lines" Padding="2">
+        <!--<custom_components:TransitLine Color="#c82032" Heading="Howard" Station_ID="30274" x:Name="RedNorth" />-->
+    </Grid>
+    
 </ContentPage>

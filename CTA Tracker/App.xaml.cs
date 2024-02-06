@@ -2,15 +2,11 @@
 {
     public partial class App : Application
     {
-        public App()
+        public App(MainPage page)
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
-
-            TransitLine testline = new TransitLine { Name = "Red", Color = Colors.Coral, Station_ID = 30274 };
-
-            MainPage.AddLine(testline);
+            MainPage = page;
         }
     }
 }

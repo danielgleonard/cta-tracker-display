@@ -1,0 +1,72 @@
+{
+  "keys": {
+    "train": "",
+    "bus": ""
+  },
+  "stations": [
+    {
+      "Name": "Red",
+      "Heading": "Howard",
+      "Station": "Addison",
+      "Station_ID": 30274,
+      "Color": "#c60c30",
+      "Mode": "metro"
+    },
+    {
+      "Name": "Red",
+      "Heading": "95th/Dan-Ryan",
+      "Station": "Addison",
+      "Station_ID": 30274,
+      "Color": "#c60c30",
+      "Mode": "metro"
+    },
+    {
+      "Name": "Brown",
+      "Heading": "Kimball",
+      "Station": "Southport",
+      "Station_ID": 30070,
+      "Color": "#62361b",
+      "Mode": "metro"
+    },
+    {
+      "Name": "Brown",
+      "Heading": "Loop",
+      "Station": "Southport",
+      "Station_ID": 30071,
+      "Color": "#62361b",
+      "Mode": "metro"
+    },
+    {
+      "Name": "22 Clark",
+      "Heading": "North",
+      "Station": "Clark/Addison",
+      "Station_ID": 1926,
+      "Color": "#003eaa",
+      "Mode": "bus"
+    },
+    {
+      "Name": "22 Clark",
+      "Heading": "South",
+      "Station": "Clark/Addison",
+      "Station_ID": 1823,
+      "Color": "#003eaa",
+      "Mode": "bus"
+    },
+    {
+      "Name": "152 Addison",
+      "Heading": "East",
+      "Station": "Addison/Lakewood",
+      "Station_ID": 12539,
+      "Color": "#003eaa",
+      "Mode": "bus"
+    },
+    {
+      "Name": "152 Addison",
+      "Heading": "West",
+      "Station": "Addison/Lakewood",
+      "Station_ID": 12557,
+      "Color": "#003eaa",
+      "Mode": "bus"
+    }
+  ]
+}
