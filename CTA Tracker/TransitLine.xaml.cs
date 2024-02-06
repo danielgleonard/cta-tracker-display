@@ -79,10 +79,26 @@ public partial class TransitLine : ContentView
     public static readonly BindableProperty Arrival2Property =
         BindableProperty.Create(nameof(Arrival2), typeof(string), typeof(TransitLine));
 
+    public HttpClient? httpClient;
+    public string keyMetro;
+    public string keyBus;
+    private CTA_API_Requester requester;
+
     public TransitLine()
     {
         Arrivals = [new Arrival(), new Arrival(), new Arrival()];
 
         InitializeComponent();
+
+        if (Mode == "metro")
+        {
+            requester = new CTA_API_Requester_L(key: keyMetro, httpClient: httpClient);
+        }
+        else if (Mode == "bus")
+        {
+            requester = new CTA_API_Requester_Bus(key: keyBus, httpClient: httpClient);
+
+            Arrivals = requester.GetArrivals(stop: (int)Station_ID);
+        }
     }
 }

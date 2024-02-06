@@ -4,6 +4,7 @@ namespace CTA_Tracker
 {
     public partial class MainPage : ContentPage
     {
+        static HttpClient client = new HttpClient();
         IConfiguration configuration;
 
         public MainPage(IConfiguration config)
@@ -27,6 +28,10 @@ namespace CTA_Tracker
             foreach (var configurationSection in configuration.GetRequiredSection("stations").GetChildren())
             {
                 TransitLine requestedLine = configurationSection.Get<TransitLine>();
+                requestedLine.httpClient = client;
+                requestedLine.keyMetro = configuration.GetRequiredSection("keys").GetRequiredSection("metro").Value;
+                requestedLine.keyBus = configuration.GetRequiredSection("keys").GetRequiredSection("bus").Value;
+
                 AddLine(line: requestedLine);
             }
         }
