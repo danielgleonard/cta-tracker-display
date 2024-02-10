@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>$(DotNetVersion)</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CTA_Tracker.Wasm\CTA_Tracker.Wasm.csproj" />
+    <ProjectReference Include="..\CTA_Tracker.DataContracts\CTA_Tracker.DataContracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" />
+    <PackageReference Include="Uno.Wasm.Bootstrap.Server" />
+  </ItemGroup>
+
+</Project>

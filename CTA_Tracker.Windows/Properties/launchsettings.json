@@ -1,0 +1,10 @@
+{
+	"profiles": {
+		"CTA_Tracker.Windows (Unpackaged)": {
+			"commandName": "Project"
+		},
+		"CTA_Tracker.Windows (Package)": {
+			"commandName": "MsixPackage"
+		}
+	}
+}

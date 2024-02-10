@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "CTA_Tracker",
+  "display": "standalone",
+  "name": "CTA_Tracker",
+  "short_name": "CTA_Tracker",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
